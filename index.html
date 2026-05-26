@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Aju Eldo — Data Scientist & Analyst</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="cursor" id="cur"></div>
+<div class="cursor-ring" id="curR"></div>
+<div id="readProg"></div>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#home"><em>A</em>JU ELDO</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#aitools">AI Tools</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="theme-btn" id="themeBtn"><span id="tIcon">☀</span><span id="tLabel">Light</span></button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <canvas class="hero-canvas" id="heroCanvas"></canvas>
+  <div class="hero-glow"></div>
+  <div class="hero-content fi">
+    <div class="hero-badge"><div class="bdot"></div>B.Tech CSE · 4th Year · Viswajyothi College · Kerala</div>
+    <h1>AJU<span class="acc"> ELDO</span></h1>
+    <div class="typed-row"><span id="typed"></span><span class="cblink"></span></div>
+    <p class="hero-desc">Aspiring Data Scientist & Analyst who finds stories buried in numbers. I build ML models, lead campus AI communities, and turn messy datasets into clear, human decisions — one experiment at a time.</p>
+    <div class="hero-cta">
+      <a class="btn-p" href="#projects">View Projects →</a>
+      <a class="btn-o" href="#contact">Let's Connect</a>
+      <a class="btn-o" href="https://github.com/Aju6010" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="btn-o" href="https://www.linkedin.com/in/aju-eldo" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+  </div>
+  <div class="hero-photo fi d2">
+    <img src="img1.jpeg" alt="Aju Eldo" style="width:100%;height:100%;object-fit:cover;border-radius:12px;">
+  </div>
+</section>
+<hr class="div"/>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="fi"><p class="slabel">//  About</p><h2 class="stitle">A bit about me</h2></div>
+  <div class="about-g fi d1">
+    <div class="about-t">
+      <p>Hey! I'm <strong>Aju Eldo</strong>, a fourth-year B.Tech CSE student at <strong>Viswajyothi College of Engineering and Technology</strong>, Kerala, with a minor in Electronics & Communication Engineering.</p>
+      <p>I'm passionate about <strong>Data Science, AI, and Machine Learning</strong>. As <strong>AI Interest Group Lead</strong> at MuLearn VJCET, I ran hands-on workshops and mentor peers. As <strong>Campus Lead at MuLearn</strong>, I drive collaborative tech learning across the campus.</p>
+      <p>I've interned at <strong>ICT Academy of Kerala</strong> and <strong>Elewayte</strong>, building real-world ML pipelines. I believe great engineers build people up as much as they build products.</p>
+    </div>
+    <div class="stats-g">
+      <div class="sc"><div class="sn">10+</div><div class="sl">Projects Completed</div></div>
+      <div class="sc"><div class="sn">Top 10</div><div class="sl">SAP Hackfest Nationwide</div></div>
+      <div class="sc"><div class="sn">2×</div><div class="sl">Industry Internships</div></div>
+      <div class="sc"><div class="sn">Campus Lead</div><div class="sl"> MuLearn VJCET</div></div>
+    </div>
+  </div>
+</section>
+<hr class="div"/>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="fi"><p class="slabel">//  Skills</p><h2 class="stitle">What I work with</h2></div>
+  <div class="skill-g fi d1">
+    <div class="skcat">
+      <div class="skcat-h"> Programming</div>
+      <div class="sbrow"><span class="sbn">Python</span><span class="sbp">85%</span></div><div class="sb"><div class="sbf" data-w="85"></div></div>
+      <div class="sbrow"><span class="sbn">SQL / MySQL</span><span class="sbp">80%</span></div><div class="sb"><div class="sbf" data-w="80"></div></div>
+      <div class="sbrow"><span class="sbn">C</span><span class="sbp">72%</span></div><div class="sb"><div class="sbf" data-w="72"></div></div>
+    </div>
+    <div class="skcat">
+      <div class="skcat-h"> AI / Machine Learning</div>
+      <div class="stags">
+        <span class="stag">Scikit-learn</span><span class="stag">TensorFlow</span><span class="stag">Keras</span>
+        <span class="stag">XGBoost</span><span class="stag">Random Forest</span><span class="stag">SMOTE</span>
+        <span class="stag">Pandas</span><span class="stag">NumPy</span><span class="stag">Matplotlib</span><span class="stag">Streamlit</span>
+      </div>
+    </div>
+    <div class="skcat">
+      <div class="skcat-h"> Web & Backend</div>
+      <div class="stags">
+        <span class="stag">Flask</span><span class="stag">React</span><span class="stag">Node.js</span>
+        <span class="stag">REST APIs</span><span class="stag">HTML/CSS</span><span class="stag">MySQL</span><span class="stag">ESP32/IoT</span>
+      </div>
+    </div>
+    <div class="skcat">
+      <div class="skcat-h"> Soft Skills</div>
+      <div class="stags">
+        <span class="stag">Leadership</span><span class="stag">Peer Mentoring</span><span class="stag">Teamwork</span>
+        <span class="stag">Workshop Facilitation</span><span class="stag">Project Management</span><span class="stag">Organization</span>
+      </div>
+    </div>
+  </div>
+</section>
+<hr class="div"/>
+
+<!-- AI TOOLS -->
+<section id="aitools">
+  <div class="fi"><p class="slabel">//  AI Tools</p><h2 class="stitle">AI tools I'm familiar with</h2></div>
+  <div class="tools-g fi d1">
+    <div class="tc"><div class="tc-logo"></div><div class="tc-name">ChatGPT</div><div class="tc-desc">Prompt engineering, code generation, writing assistance & research.</div></div>
+    <div class="tc"><div class="tc-logo"></div><div class="tc-name">Google Gemini</div><div class="tc-desc">Multimodal AI, Google Workspace integration, code assistance.</div></div>
+    <div class="tc"><div class="tc-logo"></div><div class="tc-name">GitHub Copilot</div><div class="tc-desc">AI-powered code completion and pair programming in VS Code.</div></div>
+    <div class="tc"><div class="tc-logo"></div><div class="tc-name">Hugging Face</div><div class="tc-desc">Pre-trained models, datasets, Transformers pipelines for NLP/CV.</div></div>
+    <div class="tc"><div class="tc-logo"></div><div class="tc-name">NotebookLM</div><div class="tc-desc">AI notebook assistant for research, generative notes, and interactive data exploration.</div></div>
+    <div class="tc"><div class="tc-logo"></div><div class="tc-name">Google Colab</div><div class="tc-desc">Cloud GPU/TPU notebooks for training and experimenting with ML models.</div></div>
+    <div class="tc"><div class="tc-logo"></div><div class="tc-name">Stable Diffusion</div><div class="tc-desc">Generative image AI — text-to-image workflows and model exploration.</div></div>
+    <div class="tc"><div class="tc-logo"></div><div class="tc-name">MLflow</div><div class="tc-desc">Experiment tracking, model versioning and ML lifecycle management.</div></div>
+  </div>
+</section>
+<hr class="div"/>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="fi"><p class="slabel">//  Projects</p><h2 class="stitle">Things I've built</h2></div>
+  <div class="proj-g fi d1">
+    <a class="pc hack" href="https://github.com/Aju6010" target="_blank" rel="noopener">
+      <div class="hbadge"> TOP 10 NATIONAL</div>
+      <div class="pt">AI · Cybersecurity · SAP Hackfest</div>
+      <h3>Decoy Detect</h3>
+      <p>AI-based scam app detection that analyses Play Store metadata to identify safe vs fraudulent apps, with a confidence-based trust score. <strong style="color:var(--text)">Top 10 nationwide at SAP Hackfest.</strong></p>
+      <div class="ptechs"><span class="tpill">Python</span><span class="tpill">ML</span><span class="tpill">NLP</span><span class="tpill">Web Scraping</span></div>
+      <div class="plink">View on GitHub ↗</div>
+    </a>
+    <a class="pc" href="https://github.com/Aju6010" target="_blank" rel="noopener">
+      <div class="pt">IoT · Machine Learning</div>
+      <h3>HYGO — Smart Hygiene System</h3>
+      <p>Full-stack IoT platform using ESP32 sensors for real-time hygiene monitoring. Random Forest ML model for predictive cleaning priority, Flask backend, MySQL, and React dashboard.</p>
+      <div class="ptechs"><span class="tpill">ESP32</span><span class="tpill">Flask</span><span class="tpill">MySQL</span><span class="tpill">React</span><span class="tpill">Random Forest</span></div>
+      <div class="plink">View on GitHub ↗</div>
+    </a>
+    <a class="pc" href="https://github.com/Aju6010" target="_blank" rel="noopener">
+      <div class="pt">Healthcare · ML · ICT Academy</div>
+      <h3>Stroke Prediction System</h3>
+      <p>ML pipeline with SMOTE for class imbalance to predict stroke risk from patient health data. Converted to a Streamlit app for interactive clinical exploration.</p>
+      <div class="ptechs"><span class="tpill">Python</span><span class="tpill">SMOTE</span><span class="tpill">Streamlit</span><span class="tpill">Sklearn</span></div>
+      <div class="plink">View on GitHub ↗</div>
+    </a>
+    <a class="pc" href="https://github.com/Aju6010" target="_blank" rel="noopener">
+      <div class="pt">ML · Elewayte Internship</div>
+      <h3>Energy Consumption Prediction</h3>
+      <p>Analyses energy usage patterns and provides data-driven insights to optimize power consumption. Built during internship at Elewayte.</p>
+      <div class="ptechs"><span class="tpill">Python</span><span class="tpill">Sklearn</span><span class="tpill">Pandas</span><span class="tpill">Matplotlib</span></div>
+      <div class="plink">View on GitHub ↗</div>
+    </a>
+    <a class="pc" href="https://github.com/Aju6010" target="_blank" rel="noopener">
+      <div class="pt">Database · Full Stack</div>
+      <h3>Student Management System</h3>
+      <p>Python app managing student records with full CRUD, dynamic schema, SQL backend and Tkinter GUI.</p>
+      <div class="ptechs"><span class="tpill">Python</span><span class="tpill">MySQL</span><span class="tpill">Tkinter</span></div>
+      <div class="plink">View on GitHub ↗</div>
+    </a>
+    <a class="pc" href="https://github.com/Aju6010" target="_blank" rel="noopener">
+      <div class="pt">Web App · Flask</div>
+      <h3>Billing System</h3>
+      <p>Python billing app with unique Bill IDs and item-level operations, extended into a Flask web application.</p>
+      <div class="ptechs"><span class="tpill">Python</span><span class="tpill">Flask</span><span class="tpill">HTML/CSS</span></div>
+      <div class="plink">View on GitHub ↗</div>
+    </a>
+  </div>
+
+  <!-- Live GitHub -->
+  <div style="margin-top:38px">
+    <p class="slabel fi" style="margin-bottom:18px">// Live from GitHub · <a href="https://github.com/Aju6010" target="_blank" style="color:var(--accent);text-decoration:none">@Aju6010 ↗</a></p>
+    <div class="proj-g fi d1" id="ghRepos"><div class="gh-loading">⟳ Fetching repositories from GitHub…</div></div>
+  </div>
+</section>
+<hr class="div"/>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="fi"><p class="slabel">//  Experience</p><h2 class="stitle">Where I've contributed</h2></div>
+  <div class="tl fi d1">
+     <div class="ti"><div class="tdot"></div><div class="tp">Dec 2025 – Present</div><div class="tr2">Data Science Impact Project</div><div class="to">MuLearn Foundation · Trivandrum</div><div class="td">Helping building impactful solutions using Data Science with a great team for the community.</div></div>
+
+    <div class="ti"><div class="tdot"></div><div class="tp">Feb 2026 – Present</div><div class="tr2">Campus Lead</div><div class="to">MuLearn VJCET · Ernakulam</div><div class="td">Leading campus initiatives, coordinating student communities, and driving collaborative tech learning and innovation across departments.</div></div>
+    <div class="ti"><div class="tdot"></div><div class="tp">Oct 2025 – Feb 2026</div><div class="tr2">AI Interest Group Lead</div><div class="to">MuLearn VJCET · Ernakulam</div><div class="td">Leading an AI-focused student group, conducting hands-on workshops and mentoring peers in practical AI/ML concepts — from preprocessing to deployment.</div></div>
+    <div class="ti"><div class="tdot"></div><div class="tp">Jun 2025 – Jul 2025</div><div class="tr2">AI/ML Intern</div><div class="to">ICT Academy of Kerala · Thrissur</div><div class="td">Hands-on experience in data preprocessing, supervised & unsupervised learning, and model evaluation using Python and scikit-learn.</div></div>
+    <div class="ti"><div class="tdot"></div><div class="tp">Oct 2024 – Nov 2024</div><div class="tr2">AI/ML Intern</div><div class="to">Elewayte · Remote</div><div class="td">Built real-world AI projects: Email Validator and Energy Consumption Prediction model, focusing on data preprocessing and ML workflows.</div></div>
+  </div>
+</section>
+<hr class="div"/>
+
+<!-- EDUCATION -->
+<section id="education" style="background:var(--bg2)">
+  <div class="fi"><p class="slabel">//  Education</p><h2 class="stitle">Academic journey</h2></div>
+  <div class="tl fi d1">
+    <div class="ti"><div class="tdot"></div><div class="tp">Sept 2023 – May 2027</div><div class="tr2">B.Tech — Computer Science & Engineering</div><div class="to">Viswajyothi College of Engineering & Technology · Ernakulam · Minor: ECE</div><div class="td">Focused on AI/ML, Data Science, and full-stack development. Active in MuLearn leadership, research projects, and peer mentoring.</div></div>
+    <div class="ti"><div class="tdot"></div><div class="tp">Jun 2021 – Mar 2023</div><div class="tr2">Higher Secondary — Science Stream</div><div class="to">St. Stephen's Bes-Ania Public School · Ernakulam</div><div class="td">Strong foundation in Mathematics, Physics, and Computer Science fundamentals.</div></div>
+  </div>
+</section>
+<hr class="div"/>
+
+<!-- RESUME -->
+<section id="resume">
+  <div class="fi"><p class="slabel">//  Resume</p><h2 class="stitle">My resume</h2></div>
+  <div class="rv fi d1">
+    <div class="rtop">
+      <span>📄 aju_eldo_resume.pdf · Last updated 2026</span>
+      <div class="rdl-group">
+        <a class="rdl" href="https://drive.google.com/file/d/1wkVWa0bI5m1lOpqEdRQGgz2cLjCh2mGf/view?usp=sharing" target="_blank">⬇ Download Resume</a>
+        <a class="rdl" href="mailto:ajueldo6010@gmail.com?subject=Resume Request from Portfolio">✉ Request via Email</a>
+      </div>
+    </div>
+    <div class="rb">
+      <div class="rname">AJU ELDO</div>
+      <div class="rcon">
+        Muthirakalayil (H) | Pindimana P.O | Kothamangalam | Ernakulam | Kerala — 686692<br/>
+        +91 9539756010 · <a href="mailto:ajueldo6010@gmail.com">ajueldo6010@gmail.com</a> ·
+        <a href="https://github.com/Aju6010" target="_blank">github.com/Aju6010</a> ·
+        <a href="https://www.linkedin.com/in/aju-eldo" target="_blank">linkedin.com/in/aju-eldo</a>
+      </div>
+
+      <div class="rst">Professional Summary</div>
+      <div class="rsum">Motivated and detail-oriented Computer Science student with hands-on experience in Data Science, Artificial Intelligence, Machine Learning, and full-stack development. Active community and campus lead, experienced in organizing workshops, mentoring peers, and fostering collaborative learning. Skilled in Python, SQL, data analysis, Flask, and Streamlit. Passionate about developing data-driven and socially impactful technology solutions, with strong problem-solving, leadership, and teamwork abilities.</div>
+
+      <div class="rst">Education</div>
+      <div class="rrow"><div class="rrow-h"><span class="rrow-t">Viswajyothi College of Engineering and Technology</span><span class="rrow-p">Sept 2023 – May 2027</span></div><div class="rrow-s">B.Tech, CSE | Minor: Electronics & Communication Engineering | Ernakulam</div></div>
+      <div class="rrow"><div class="rrow-h"><span class="rrow-t">St. Stephen's Bes-Ania Public School</span><span class="rrow-p">Jun 2021 – Mar 2023</span></div><div class="rrow-s">10th – 12th | Ernakulam</div></div>
+
+      <div class="rst">Experience</div>
+      <div class="rrow"><div class="rrow-h"><span class="rrow-t">Project Contributor — MuLearn Foundation</span><span class="rrow-p">Dec 2025 – Present</span></div><div class="rrow-d">Helping building impactful solutions using Data Science with a great team for the community.</div></div>
+      <div class="rrow"><div class="rrow-h"><span class="rrow-t">Campus Lead — MuLearn VJCET</span><span class="rrow-p">Feb 2026 – Present</span></div><div class="rrow-d">Leading campus initiatives, coordinating student communities, driving collaborative tech learning.</div></div>
+      <div class="rrow"><div class="rrow-h"><span class="rrow-t">AI IG Lead — MuLearn VJCET</span><span class="rrow-p">Oct 2025 – Feb 2026</span></div><div class="rrow-d">Led AI-focused student group, conducted hands-on workshops, mentored peers in practical AI/ML.</div></div>
+      <div class="rrow"><div class="rrow-h"><span class="rrow-t">Intern — ICT Academy of Kerala</span><span class="rrow-p">Jun 2025 – Jul 2025</span></div><div class="rrow-d">AI/ML hands-on: data preprocessing, supervised/unsupervised learning, model evaluation — Python & scikit-learn.</div></div>
+      <div class="rrow"><div class="rrow-h"><span class="rrow-t">Intern — Elewayte (Remote)</span><span class="rrow-p">Oct 2024 – Nov 2024</span></div><div class="rrow-d">Built Email Validator and Energy Consumption Prediction model focusing on ML workflows.</div></div>
+
+      <div class="rst">Skills</div>
+      <div class="rskills">
+        <span class="rsk">Python</span><span class="rsk">SQL</span><span class="rsk">Machine Learning</span>
+        <span class="rsk">Data Science</span><span class="rsk">Flask</span><span class="rsk">Streamlit</span>
+        <span class="rsk">Scikit-learn</span><span class="rsk">TensorFlow</span>
+        <span class="rsk">Leadership</span><span class="rsk">Peer Mentoring</span><span class="rsk">Project Management</span>
+      </div>
+
+      <div class="rst">Achievements</div>
+      <div class="rrow"><div class="rrow-d"> <strong style="color:var(--text)">Top 10 Nationwide — SAP Hackfest</strong> for Decoy Detect, an AI-based scam application detection system.</div></div>
+    </div>
+  </div>
+</section>
+<hr class="div"/>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="fi"><p class="slabel">//  Achievements</p><h2 class="stitle">Milestones & recognitions</h2></div>
+  <div class="ach-g fi d1">
+    <div class="ac"><div class="ai2"></div><div class="ab"><h4>Top 10 — SAP Hackfest</h4><p>Achieved Top 10 nationwide ranking for Decoy Detect, an AI-based scam app detection system.</p></div></div>
+    <div class="ac"><div class="ai2"></div><div class="ab"><h4>Campus Lead · MuLearn</h4><p>Leading campus-wide tech initiatives and community building at VJCET.</p></div></div>
+    <div class="ac"><div class="ai2"></div><div class="ab"><h4>AI IG Lead · MuLearn</h4><p>Founded and lead the AI Interest Group at VJCET, running workshops and mentoring students.</p></div></div>
+    <div class="ac"><div class="ai2"></div><div class="ab"><h4>Dual Industry Internships</h4><p>Completed AI/ML internships at ICT Academy of Kerala and Elewayte.</p></div></div>
+    <div class="ac"><div class="ai2"></div><div class="ab"><h4>ML Healthcare Pipeline</h4><p>Built multiple production-grade ML models for healthcare prediction with class balancing.</p></div></div>
+    <div class="ac"><div class="ai2"></div><div class="ab"><h4>Academic + Community Balance</h4><p>Maintained strong academics while leading tech communities and building real-world projects.</p></div></div>
+  </div>
+</section>
+<hr class="div"/>
+
+<!-- INTERESTS -->
+<section id="interests">
+  <div class="fi"><p class="slabel">//  Interests & Hobbies</p><h2 class="stitle">What keeps me going</h2></div>
+  <div class="int-g fi d1">
+    <div class="ip"><span></span> Data Visualization</div>
+    <div class="ip"><span></span> ML Research</div>
+    <div class="ip"><span></span> IoT & Embedded Systems</div>
+    <div class="ip"><span></span> Reading Tech Articles</div>
+    <div class="ip"><span></span> Gaming</div>
+    <div class="ip"><span></span> Music</div>
+    <div class="ip"><span></span> Cricket</div>
+    <div class="ip"><span></span> Problem Solving</div>
+    <div class="ip"><span></span> Travelling</div>
+    <div class="ip"><span></span> Peer Mentoring</div>
+    <div class="ip"><span></span> Open Source</div>
+  </div>
+</section>
+<hr class="div"/>
+
+<!-- BLOG -->
+<section id="blog" style="background:var(--bg2)">
+  <div class="fi"><p class="slabel">//  Blog & Articles</p><h2 class="stitle">Thoughts & learnings</h2></div>
+  <div class="blog-g fi d1">
+    <div class="bc"><div class="bdate">COMING SOON · 2025</div><h3>What I Learned Building My First ML Model for Healthcare</h3><p>Imbalanced medical datasets, SMOTE, and why precision matters more than accuracy in clinical predictions.</p><div class="bread">→ Coming soon</div></div>
+    <div class="bc"><div class="bdate">COMING SOON · 2025</div><h3>ESP32 + ML: Building HYGO from Scratch</h3><p>How I combined IoT hardware, Flask, and a Random Forest model to solve a hygiene monitoring problem.</p><div class="bread">→ Coming soon</div></div>
+    <div class="bc"><div class="bdate">COMING SOON · 2025</div><h3>Why Every CS Student Should Learn SQL Before Python</h3><p>Why database thinking fundamentally changes how you approach data problems in data science.</p><div class="bread">→ Coming soon</div></div>
+  </div>
+</section>
+<hr class="div"/>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="fi"><p class="slabel">//  Contact</p><h2 class="stitle">Let's connect</h2></div>
+  <div class="cw fi d1">
+    <div class="ci">
+      <h3>Open to opportunities & collabs</h3>
+      <p>Whether you have a project idea, internship opportunity, or just want to talk data science — I'm always up for a conversation. Drop a message and I'll get back to you!</p>
+      <a class="clink" href="mailto:ajueldo6010@gmail.com"><div class="cicon">✉</div> ajueldo6010@gmail.com</a>
+      <a class="clink" href="https://www.linkedin.com/in/aju-eldo" target="_blank" rel="noopener"><div class="cicon">in</div> linkedin.com/in/aju-eldo</a>
+      <a class="clink" href="https://github.com/Aju6010" target="_blank" rel="noopener"><div class="cicon">GH</div> github.com/Aju6010</a>
+      <a class="clink" href="tel:+919539756010"><div class="cicon">📞</div> +91 9539756010</a>
+    </div>
+    <div class="cf">
+      <div class="frow">
+        <div class="fg"><label>YOUR NAME</label><input type="text" id="cfn" placeholder="John Doe"/></div>
+        <div class="fg"><label>YOUR EMAIL</label><input type="email" id="cfe" placeholder="john@example.com"/></div>
+      </div>
+      <div class="fg">
+        <label>REASON FOR REACHING OUT</label>
+        <select id="cfs">
+          <option value="">Select...</option>
+          <option>Internship / Job Opportunity</option>
+          <option>Project Collaboration</option>
+          <option>Mentorship / Workshop</option>
+          <option>General Enquiry</option>
+          <option>Just saying hi </option>
+        </select>
+      </div>
+      <div class="fg"><label>MESSAGE</label><textarea id="cfm" rows="5" placeholder="What's on your mind? I'd love to hear from you..."></textarea></div>
+      <button class="sbtn" id="sbtn" onclick="sendMsg()"><span id="sbtnT">Send Message →</span></button>
+      <div class="fmsg" id="fmsg"></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="flogo"><em>A</em>JU ELDO</div>
+  <div class="ftxt">Where raw data meets human curiosity · Kerala, India</div>
+  <div class="fmono">© 2025 · Built with ♥ & lots of Python</div>
+</footer>
+
+<!-- MODAL -->
+<div class="mo" id="modal" onclick="if(event.target===this)closeModal()">
+  <div class="md">
+    <button class="mclose" onclick="closeModal()">✕</button>
+    <h3 id="mTitle"></h3>
+    <div class="mlang" id="mLang"></div>
+    <p id="mDesc"></p>
+    <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
+      <a id="mLink" href="#" target="_blank" rel="noopener" class="btn-p" style="font-size:13px;padding:9px 18px">Open on GitHub ↗</a>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

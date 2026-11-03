@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101412" />
+  <meta name="description" content="Aju Eldo — Software, data, and technology professional building useful digital products." />
+  <title>Aju Eldo — Software, Data & Technology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css?v=3d-20261103-4" />
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script defer src="script.js?v=3d-20261103-4"></script>
+</head>
+<body>
+  <div class="world" aria-hidden="true">
+    <canvas id="worldCanvas"></canvas>
+    <div class="world-fallback"></div>
+    <div class="world-shade"></div>
+    <div class="world-grain"></div>
+  </div>
+  <div class="read-progress" id="readProgress"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Aju Eldo, home">
+      <span class="brand-mark">AE</span><span>AJU ELDO<span class="brand-period">.</span></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#skills">Expertise</a><a href="#projects">Work</a>
+      <a href="#experience">Journey</a><a href="#achievements">Accolades</a><a href="#resume">Resume</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-availability" href="#contact"><span></span> OPEN TO OPPORTUNITIES</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobileNav">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="#about">About</a><a href="#skills">Expertise</a><a href="#projects">Work</a>
+    <a href="#experience">Journey</a><a href="#achievements">Accolades</a><a href="#resume">Resume</a><a href="#contact">Contact</a>
+  </nav>
+
+  <aside class="scene-hud" aria-hidden="true">
+    <span class="hud-top">FIELD NOTES <b>01—07</b></span>
+    <span class="hud-line"></span>
+    <span class="hud-bottom" id="hudChapter">INTRODUCTION</span>
+  </aside>
+  <div class="scene-coordinate" aria-hidden="true"><span>KERALA, INDIA</span><span id="sceneReadout">CHAPTER 01 · WAYPOINT 000</span></div>
+
+  <main>
+    <section class="hero chapter" id="home" data-chapter="INTRODUCTION">
+      <div class="hero-layout">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-rule"></span> SOFTWARE · DATA · TECHNOLOGY</p>
+          <h1>Building tools<br />with <span class="accent-word">purpose.</span></h1>
+          <div class="hero-role"><span class="terminal-sign">/</span><span id="typed">Software & Data Developer</span><span class="typing-caret"></span></div>
+          <p class="hero-intro">I’m Aju Eldo, a computer science student who builds practical software and data-driven products to solve real problems.</p>
+          <div class="hero-cta">
+            <a class="button button-solid" href="#projects">Explore my work <i class="fa-solid fa-arrow-down"></i></a>
+            <a class="button button-quiet" href="https://drive.google.com/file/d/1TLfUH15mImigHG9Wvvdatt4Az-sQ7yrK/view?usp=sharing" target="_blank" rel="noopener noreferrer">View resume <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+          <div class="hero-proof"><span>TOP 10 <small>SAP HACKFEST · NATIONAL</small></span><i></i><span>2× <small>INDUSTRY INTERNSHIPS</small></span><i></i><span>10+ <small>PROJECTS BUILT</small></span></div>
+        </div>
+        <div class="hero-portrait reveal reveal-delay" id="heroPortrait">
+          <div class="portrait-frame"><img src="img1.jpeg" alt="Aju Eldo" class="profile-photo" /></div>
+          <div class="portrait-index">FIG. 01 <span>AJU ELDO / 2026</span></div>
+          <div class="portrait-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="portrait-note"><span class="note-dot"></span> BUILDING AT THE INTERSECTION OF DATA & IMPACT</div>
+        </div>
+        <div class="hero-scroll"><span>SCROLL TO TRAVEL</span><i class="fa-solid fa-arrow-down-long"></i></div>
+        <div class="hero-watermark" aria-hidden="true">01</div>
+      </div>
+    </section>
+
+    <section class="chapter content-chapter" id="about" data-chapter="PROFILE">
+      <div class="chapter-layout">
+        <div class="chapter-index reveal"><span>01</span><i></i><small>PROFILE</small></div>
+        <div class="chapter-main reveal">
+          <p class="eyebrow">A LITTLE CONTEXT</p>
+          <h2>Curiosity,<br />with a <span class="accent-word">purpose.</span></h2>
+          <p class="lead-copy">I’m a final-year Computer Science & Engineering undergraduate at <strong>Viswajyothi College of Engineering and Technology</strong>, Kerala, with an interdisciplinary minor in Electronics & Communication Engineering.</p>
+          <p class="body-copy">My interests span <strong>software development, data analytics, data science, and applied AI/ML</strong>—bringing code and information together to build useful products. As the <strong>MuLearn Campus Lead</strong> and former <strong>AI Interest Group Lead</strong>, I coordinate student development communities, organize hands-on technical workshops, and mentor peers.</p>
+          <p class="body-copy">Through internships at <strong>ICT Academy of Kerala</strong> and <strong>Elewayte</strong>, I have designed machine learning classification pipelines, predictive algorithms, and end-to-end data processing systems.</p>
+          <div class="inline-facts"><span><i class="fa-solid fa-location-dot"></i> Kerala, India</span><span><i class="fa-solid fa-graduation-cap"></i> CSE + ECE Minor</span><span><i class="fa-solid fa-code"></i> Python & SQL</span></div>
+        </div>
+        <div class="chapter-side reveal reveal-delay">
+          <div class="fact-number"><strong>10<span>+</span></strong><span>PROJECTS BUILT</span><p>Machine learning models, IoT platforms, and data pipelines.</p></div>
+          <div class="fact-number"><strong>TOP 10</strong><span>SAP HACKFEST · NATIONAL</span><p>Decoy Detect, an AI scam application identifier.</p></div>
+          <div class="fact-number"><strong>100<span>+</span></strong><span>STUDENTS REACHED</span><p>Through campus learning, mentoring, and workshops.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter content-chapter" id="skills" data-chapter="EXPERTISE">
+      <div class="chapter-layout">
+        <div class="chapter-index reveal"><span>02</span><i></i><small>EXPERTISE</small></div>
+        <div class="chapter-main reveal">
+          <p class="eyebrow">TOOLS I THINK WITH</p>
+          <h2>From signal<br />to <span class="accent-word">system.</span></h2>
+          <p class="lead-copy">A practical toolkit for moving from raw data to working products, with people and collaboration at the center.</p>
+          <div class="skill-groups">
+            <article class="skill-group"><div class="skill-heading"><span>01</span><h3>Programming</h3><i class="fa-solid fa-arrow-up-right-from-square"></i></div><div class="skill-list"><span>Python · 85%</span><span>SQL / MySQL · 80%</span><span>C / Embedded C · 72%</span></div></article>
+            <article class="skill-group"><div class="skill-heading"><span>02</span><h3>AI & Machine Learning</h3><i class="fa-solid fa-arrow-up-right-from-square"></i></div><div class="skill-list"><span>Scikit-learn</span><span>TensorFlow</span><span>Keras</span><span>XGBoost</span><span>Random Forest</span><span>SMOTE</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Streamlit</span></div></article>
+            <article class="skill-group"><div class="skill-heading"><span>03</span><h3>Web, Backend & IoT</h3><i class="fa-solid fa-arrow-up-right-from-square"></i></div><div class="skill-list"><span>Flask</span><span>React</span><span>Node.js</span><span>REST APIs</span><span>HTML5 / CSS3</span><span>MySQL</span><span>ESP32 IoT</span></div></article>
+            <article class="skill-group"><div class="skill-heading"><span>04</span><h3>Leadership & Tools</h3><i class="fa-solid fa-arrow-up-right-from-square"></i></div><div class="skill-list"><span>Campus Leadership</span><span>Workshop Facilitation</span><span>Peer Mentoring</span><span>Git / GitHub</span><span>VS Code</span><span>Google Colab</span><span>Project Management</span></div></article>
+          </div>
+        </div>
+        <div class="chapter-side skill-aside reveal reveal-delay"><span class="aside-label">WORKING PRINCIPLE</span><p>Build the smallest useful thing. Learn from the people who use it. Make the next version better.</p><span class="aside-coord">PYTHON · SQL · ML · IOT</span></div>
+      </div>
+    </section>
+
+    <section class="chapter content-chapter" id="projects" data-chapter="SELECTED WORK">
+      <div class="chapter-layout project-chapter-layout">
+        <div class="chapter-index reveal"><span>03</span><i></i><small>SELECTED WORK</small></div>
+        <div class="chapter-main reveal">
+          <p class="eyebrow">A FEW THINGS I’VE MADE</p>
+          <h2>Built to solve<br /><span class="accent-word">real problems.</span></h2>
+          <p class="lead-copy">Machine learning, connected devices, and practical software—each project starts with a concrete need.</p>
+          <div class="project-filters" role="group" aria-label="Filter projects">
+            <button class="filter-chip active" data-filter="all">All work <span>06</span></button>
+            <button class="filter-chip" data-filter="ml">Data & ML</button>
+            <button class="filter-chip" data-filter="iot">IoT</button>
+            <button class="filter-chip" data-filter="software">Software</button>
+          </div>
+          <div class="project-list" id="projectList">
+            <article class="work-item" data-category="ml"><span class="work-number">01</span><div class="work-copy"><span class="work-kicker">SAP HACKFEST · TOP 10 NATIONAL</span><h3>Decoy Detect <span>— AI Scam App Detection</span></h3><p>AI-driven scam application detection engine. Evaluates app marketplace metadata, text patterns, and user sentiments to identify deceptive clone applications with a confidence-based trust score.</p><div class="work-tags"><span>Python</span><span>Scikit-learn</span><span>NLP</span><span>Web Scraping</span></div></div><a class="work-open" href="https://github.com/Aju6010" target="_blank" rel="noopener" aria-label="View Decoy Detect on GitHub"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></article>
+            <article class="work-item" data-category="iot"><span class="work-number">02</span><div class="work-copy"><span class="work-kicker">IOT & MACHINE LEARNING</span><h3>HYGO <span>— Smart Hygiene System</span></h3><p>Full-stack IoT solution using ESP32 telemetry for real-time facility hygiene tracking. A Random Forest model forecasts servicing urgency with a Flask backend and React dashboard.</p><div class="work-tags"><span>ESP32</span><span>Flask</span><span>Random Forest</span><span>React</span></div></div><a class="work-open" href="https://github.com/Aju6010" target="_blank" rel="noopener" aria-label="View HYGO on GitHub"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></article>
+            <article class="work-item" data-category="ml"><span class="work-number">03</span><div class="work-copy"><span class="work-kicker">HEALTHCARE AI · ICT ACADEMY</span><h3>Stroke Prediction <span>— Diagnostic System</span></h3><p>Clinical machine learning model handling medical dataset imbalance with SMOTE. Evaluated on high-sensitivity metrics and integrated into an interactive Streamlit UI.</p><div class="work-tags"><span>Python</span><span>SMOTE</span><span>Streamlit</span><span>Scikit-learn</span></div></div><a class="work-open" href="https://github.com/Aju6010" target="_blank" rel="noopener" aria-label="View Stroke Prediction on GitHub"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></article>
+            <article class="work-item" data-category="ml"><span class="work-number">04</span><div class="work-copy"><span class="work-kicker">TIME SERIES · ELEWAYTE</span><h3>Energy Consumption Forecasting</h3><p>Predictive regression pipeline modeling industrial electricity demand. Used exploratory analysis, feature engineering, and validation to support power optimization.</p><div class="work-tags"><span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>Matplotlib</span></div></div><a class="work-open" href="https://github.com/Aju6010" target="_blank" rel="noopener" aria-label="View Energy Forecasting on GitHub"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></article>
+            <article class="work-item" data-category="software"><span class="work-number">05</span><div class="work-copy"><span class="work-kicker">DATABASE · FULL STACK</span><h3>Student Management System</h3><p>Python desktop application for academic records, relational data, dynamic filtering, CRUD transactions, and a Tkinter interface.</p><div class="work-tags"><span>Python</span><span>MySQL</span><span>Tkinter</span></div></div><a class="work-open" href="https://github.com/Aju6010" target="_blank" rel="noopener" aria-label="View Student Management System on GitHub"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></article>
+            <article class="work-item" data-category="software"><span class="work-number">06</span><div class="work-copy"><span class="work-kicker">WEB APPLICATION</span><h3>Smart Billing & POS Platform</h3><p>Commercial billing application with unique transaction ID hashes, multi-item tax calculation, and persistent database storage using Flask.</p><div class="work-tags"><span>Python</span><span>Flask</span><span>HTML / CSS</span></div></div><a class="work-open" href="https://github.com/Aju6010" target="_blank" rel="noopener" aria-label="View Smart Billing on GitHub"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></article>
+          </div>
+          <div class="github-strip"><span class="live-pulse"></span> LIVE REPOSITORIES <a href="https://github.com/Aju6010" target="_blank" rel="noopener">@Aju6010 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+          <div class="repo-tools">
+            <p id="repoCount" aria-live="polite">Loading public repositories…</p>
+            <label class="repo-search"><i class="fa-solid fa-magnifying-glass"></i><input type="search" id="repoSearch" placeholder="Search all repositories" aria-label="Search all GitHub repositories" /></label>
+            <label class="repo-sort-label" for="repoSort">SORT</label>
+            <select id="repoSort" class="repo-sort" aria-label="Sort GitHub repositories"><option value="updated">Recently updated</option><option value="name">Name A–Z</option><option value="stars">Most stars</option></select>
+          </div>
+          <div class="repo-grid" id="ghRepos"><p class="repo-loading">Connecting to GitHub…</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter content-chapter" id="experience" data-chapter="JOURNEY">
+      <div class="chapter-layout">
+        <div class="chapter-index reveal"><span>04</span><i></i><small>JOURNEY</small></div>
+        <div class="chapter-main reveal">
+          <p class="eyebrow">LEARNING BY DOING</p>
+          <h2>Work, leadership<br />& <span class="accent-word">community.</span></h2>
+          <p class="lead-copy">Internships and community building roles across Kerala’s tech landscape.</p>
+          <div class="experience-list">
+            <article class="experience-item"><span class="experience-date">DEC 2025 — PRESENT</span><div><h3>Data Science Impact Project</h3><p class="experience-place">MuLearn Foundation · Trivandrum</p><p>Collaborating on data-driven community initiatives and analytics pipelines delivering real-world value for the student developer ecosystem.</p></div><span class="experience-index">01</span></article>
+            <article class="experience-item"><span class="experience-date">FEB 2026 — PRESENT</span><div><h3>Campus Lead</h3><p class="experience-place">MuLearn VJCET · Ernakulam</p><p>Leading campus tech culture, coordinating multi-department hackathons, and fostering collaborative learning across 100+ members.</p></div><span class="experience-index">02</span></article>
+            <article class="experience-item"><span class="experience-date">OCT 2025 — FEB 2026</span><div><h3>AI Interest Group Lead</h3><p class="experience-place">MuLearn VJCET · Ernakulam</p><p>Organized masterclasses covering Python data preprocessing, machine learning algorithms, model evaluation, and deployment.</p></div><span class="experience-index">03</span></article>
+            <article class="experience-item"><span class="experience-date">JUN 2025 — JUL 2025</span><div><h3>AI/ML Intern</h3><p class="experience-place">ICT Academy of Kerala · Thrissur</p><p>Developed supervised and unsupervised learning models, explored datasets, balanced classes, and evaluated model performance.</p></div><span class="experience-index">04</span></article>
+            <article class="experience-item"><span class="experience-date">OCT 2024 — NOV 2024</span><div><h3>AI/ML Intern</h3><p class="experience-place">Elewayte · Remote</p><p>Engineered practical ML applications including Email Validator systems and Energy Consumption Prediction models.</p></div><span class="experience-index">05</span></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter content-chapter" id="achievements" data-chapter="RECOGNITION">
+      <div class="chapter-layout">
+        <div class="chapter-index reveal"><span>05</span><i></i><small>RECOGNITION</small></div>
+        <div class="chapter-main reveal">
+          <p class="eyebrow">MILESTONES ALONG THE WAY</p>
+          <h2>Proof in the<br /><span class="accent-word">progress.</span></h2>
+          <div class="recognition-list">
+            <article><span class="recognition-icon"><i class="fa-solid fa-trophy"></i></span><div><h3>Top 10 — SAP Hackfest</h3><p>Ranked among the top 10 teams nationally across India for Decoy Detect, an AI fraud app identifier.</p></div><span>01</span></article>
+            <article><span class="recognition-icon"><i class="fa-solid fa-people-group"></i></span><div><h3>MuLearn Campus Lead</h3><p>Selected to spearhead university-wide tech initiatives, interest groups, and hackathons.</p></div><span>02</span></article>
+            <article><span class="recognition-icon"><i class="fa-solid fa-brain"></i></span><div><h3>AI Interest Group Lead</h3><p>Founded campus AI division, training 100+ peers in foundational and applied machine learning.</p></div><span>03</span></article>
+            <article><span class="recognition-icon"><i class="fa-solid fa-briefcase"></i></span><div><h3>Dual Industry Internships</h3><p>Completed AI/ML internships at ICT Academy of Kerala and Elewayte.</p></div><span>04</span></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter content-chapter" id="resume" data-chapter="RESUME">
+      <div class="chapter-layout">
+        <div class="chapter-index reveal"><span>06</span><i></i><small>RESUME</small></div>
+        <div class="chapter-main reveal">
+          <p class="eyebrow">THE SHORT VERSION</p>
+          <h2>Experience,<br />on <span class="accent-word">one page.</span></h2>
+          <div class="resume-banner"><div><span class="resume-file"><i class="fa-regular fa-file-lines"></i> AJU_ELDO_RESUME.PDF</span><p>Education, technical skills, internships, and community leadership.</p></div><a class="button button-solid" href="https://drive.google.com/file/d/1TLfUH15mImigHG9Wvvdatt4Az-sQ7yrK/view?usp=sharing" target="_blank" rel="noopener noreferrer">Open resume <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+          <div class="resume-summary">
+            <div><span class="resume-section-title">PROFILE</span><p>Motivated and detail-oriented Computer Science student with hands-on experience in Data Science, Artificial Intelligence, Machine Learning, and full-stack development. Active community and campus lead, experienced in organizing workshops, mentoring peers, and fostering collaborative learning. Skilled in Python, SQL, data analysis, Flask, and Streamlit.</p></div>
+            <div><span class="resume-section-title">EDUCATION</span><p><strong>Viswajyothi College of Engineering and Technology</strong><br />B.Tech, CSE · Minor: Electronics & Communication Engineering · Sept 2023 – May 2027</p><p><strong>St. Stephen’s Bes-Ania Public School</strong><br />Higher Secondary, Science Stream · Jun 2021 – Mar 2023</p></div>
+            <div><span class="resume-section-title">CORE SKILLS</span><p>Python · SQL · Machine Learning · Data Science · Flask · Streamlit · Scikit-learn · TensorFlow · Leadership · Peer Mentoring</p></div>
+            <div><span class="resume-section-title">CONTACT</span><p>Muthirakalayil (H), Pindimana P.O, Kothamangalam, Ernakulam, Kerala — 686692<br />+91 9539756010 · ajueldo6010@gmail.com</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter content-chapter contact-chapter" id="contact" data-chapter="CONTACT">
+      <div class="chapter-layout">
+        <div class="chapter-index reveal"><span>07</span><i></i><small>CONTACT</small></div>
+        <div class="chapter-main reveal">
+          <p class="eyebrow">THE NEXT CHAPTER</p>
+          <h2>Let’s make<br />something <span class="accent-word">matter.</span></h2>
+          <p class="lead-copy">Open to opportunities across software, data, AI, and technology, as well as collaborative projects.</p>
+          <div class="contact-layout">
+            <div class="contact-links">
+              <a href="mailto:ajueldo6010@gmail.com"><span>EMAIL</span><strong>ajueldo6010@gmail.com</strong><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://www.linkedin.com/in/aju-eldo" target="_blank" rel="noopener"><span>LINKEDIN</span><strong>linkedin.com/in/aju-eldo</strong><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://github.com/Aju6010" target="_blank" rel="noopener"><span>GITHUB</span><strong>github.com/Aju6010</strong><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="tel:+919539756010"><span>PHONE</span><strong>+91 9539756010</strong><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <form class="contact-form" id="contactForm">
+              <div class="form-pair"><label>Your name<input type="text" id="cfn" placeholder="Name" required /></label><label>Your email<input type="email" id="cfe" placeholder="Email" required /></label></div>
+              <label>Purpose<select id="cfs"><option value="">Select purpose…</option><option>Career opportunity</option><option>Internship opportunity</option><option>Project collaboration</option><option>Workshop / speaking invitation</option><option>General technology inquiry</option></select></label>
+              <label>Message<textarea id="cfm" rows="4" placeholder="What would you like to work on?" required></textarea></label>
+              <button class="button button-solid" type="submit">Start a conversation <i class="fa-solid fa-arrow-right"></i></button>
+              <p class="form-status" id="formStatus" role="status"></p>
+            </form>
+          </div>
+          <a class="back-to-start" href="#home"><span>BACK TO THE BEGINNING</span><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>© 2026 AJU ELDO</span><span>BUILT WITH CURIOSITY · KERALA, INDIA</span><div><a href="https://github.com/Aju6010" target="_blank" rel="noopener">GITHUB</a><a href="https://www.linkedin.com/in/aju-eldo" target="_blank" rel="noopener">LINKEDIN</a></div></footer>
+  <noscript><p class="no-script">This portfolio needs JavaScript for its interactive 3D scene. The content is still available by scrolling.</p></noscript>
+</body>
+</html>
